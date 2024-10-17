@@ -1,0 +1,16 @@
+create table if not exists lineage_pattern_ds_amendment_steps(
+pattern_code_id Integer not null,
+params_of_workflow_manager varchar(255) null,
+workflow_manager_status varchar(255) null,
+workflow_manager_approved varchar(255) null,
+pending_on varchar(255) null,
+grp_name varchar(255) null,
+grp_category varchar(255) null,
+start_action varchar(255) null,
+end_action varchar(255) null,
+start_time varchar(255) null,
+end_time varchar(255) null,
+workflow_manager_creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint lineage_pattern_ds_amendment_steps_pk primary key(pattern_code_id));
